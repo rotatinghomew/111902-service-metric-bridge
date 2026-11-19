@@ -1,0 +1,236 @@
+{
+  "synthetic": true,
+  "tables": {
+    "cases": [
+      {
+        "case": "K1",
+        "district": "东城",
+        "service": "登记联办",
+        "period": "2026-10"
+      },
+      {
+        "case": "K2",
+        "district": "东城",
+        "service": "登记联办",
+        "period": "2026-10"
+      },
+      {
+        "case": "K3",
+        "district": "北城",
+        "service": "居住联办",
+        "period": "2026-10"
+      }
+    ],
+    "case_links": [
+      {
+        "case": "K1",
+        "component": "A1",
+        "window": "W1",
+        "received": "2026-10-05",
+        "operation": "关联"
+      },
+      {
+        "case": "K1",
+        "component": "B1",
+        "window": "W2",
+        "received": "2026-10-05",
+        "operation": "关联"
+      },
+      {
+        "case": "K2",
+        "component": "A2",
+        "window": "W1",
+        "received": "2026-10-05",
+        "operation": "关联"
+      },
+      {
+        "case": "K2",
+        "component": "B2",
+        "window": "W2",
+        "received": "2026-10-05",
+        "operation": "关联"
+      },
+      {
+        "case": "K2",
+        "component": "B2",
+        "window": "W2",
+        "received": "2026-11-04",
+        "operation": "撤销"
+      }
+    ],
+    "events": [
+      {
+        "component": "A1",
+        "at": "2026-10-12",
+        "event": "窗口受理"
+      },
+      {
+        "component": "A1",
+        "at": "2026-10-13",
+        "event": "材料齐备"
+      },
+      {
+        "component": "A1",
+        "at": "2026-10-14",
+        "event": "窗口暂停"
+      },
+      {
+        "component": "A1",
+        "at": "2026-10-16",
+        "event": "窗口恢复"
+      },
+      {
+        "component": "A1",
+        "at": "2026-10-20",
+        "event": "窗口完成"
+      },
+      {
+        "component": "B1",
+        "at": "2026-10-12",
+        "event": "窗口受理"
+      },
+      {
+        "component": "B1",
+        "at": "2026-10-15",
+        "event": "窗口暂停"
+      },
+      {
+        "component": "B1",
+        "at": "2026-10-19",
+        "event": "窗口恢复"
+      },
+      {
+        "component": "B1",
+        "at": "2026-10-21",
+        "event": "窗口完成"
+      },
+      {
+        "component": "A1",
+        "at": "2026-10-21",
+        "event": "联合结案"
+      },
+      {
+        "component": "A2",
+        "at": "2026-10-12",
+        "event": "窗口受理"
+      },
+      {
+        "component": "A2",
+        "at": "2026-10-16",
+        "event": "窗口完成"
+      },
+      {
+        "component": "B2",
+        "at": "2026-10-14",
+        "event": "窗口受理"
+      },
+      {
+        "component": "B2",
+        "at": "2026-10-20",
+        "event": "窗口完成"
+      }
+    ],
+    "calendar_revisions": [
+      {
+        "calendar": "旧历",
+        "applies_to": "W1",
+        "affected": "2026-10-15",
+        "state": "工作",
+        "recorded": "2026-10-01"
+      },
+      {
+        "calendar": "旧历",
+        "applies_to": "W1",
+        "affected": "2026-10-15",
+        "state": "休息",
+        "recorded": "2026-11-04"
+      },
+      {
+        "calendar": "旧历",
+        "applies_to": "W2",
+        "affected": "2026-10-13",
+        "state": "休息",
+        "recorded": "2026-10-01"
+      },
+      {
+        "calendar": "居民历",
+        "applies_to": "联办",
+        "affected": "2026-10-16",
+        "state": "休息",
+        "recorded": "2026-10-01"
+      }
+    ],
+    "rules": [
+      {
+        "version": "窗口旧口径",
+        "effective": "2025-01-01",
+        "calendar": "旧历",
+        "limit_days": 5
+      },
+      {
+        "version": "居民新口径",
+        "effective": "2026-10-01",
+        "calendar": "居民历",
+        "limit_days": 6
+      }
+    ],
+    "legacy_cells": [
+      {
+        "period": "2026-09",
+        "district": "北城",
+        "service": "居住联办",
+        "window": "W3",
+        "total": 12,
+        "timely": 10
+      }
+    ],
+    "recipients": [
+      {
+        "recipient": "市主管",
+        "district": "全市",
+        "parts": [
+          "旧考核",
+          "新考核",
+          "覆盖说明"
+        ],
+        "due": "2026-11-05T09:00"
+      },
+      {
+        "recipient": "北城窗口",
+        "district": "北城",
+        "parts": [
+          "旧考核"
+        ],
+        "due": "2026-11-05T10:00"
+      },
+      {
+        "recipient": "东城窗口",
+        "district": "东城",
+        "parts": [
+          "旧考核",
+          "新考核",
+          "覆盖说明"
+        ],
+        "due": "2026-11-05T10:00"
+      }
+    ],
+    "signed": [
+      {
+        "bundle": "R01",
+        "recipient": "东城窗口",
+        "period": "2026-10",
+        "facts_at": "2026-11-02T09:00",
+        "ack_at": "2026-11-02T09:08",
+        "result": "签收"
+      },
+      {
+        "bundle": "R02",
+        "recipient": "市主管",
+        "period": "2026-10",
+        "facts_at": "2026-11-02T09:00",
+        "ack_at": null,
+        "result": "未发送"
+      }
+    ]
+  }
+}

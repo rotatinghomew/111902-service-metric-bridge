@@ -1,0 +1,130 @@
+{
+  "cases": {
+    "case": [
+      "str"
+    ],
+    "district": [
+      "str"
+    ],
+    "service": [
+      "str"
+    ],
+    "period": [
+      "str"
+    ]
+  },
+  "case_links": {
+    "case": [
+      "str"
+    ],
+    "component": [
+      "str"
+    ],
+    "window": [
+      "str"
+    ],
+    "received": [
+      "str"
+    ],
+    "operation": [
+      "str"
+    ]
+  },
+  "events": {
+    "component": [
+      "str"
+    ],
+    "at": [
+      "str"
+    ],
+    "event": [
+      "str"
+    ]
+  },
+  "calendar_revisions": {
+    "calendar": [
+      "str"
+    ],
+    "applies_to": [
+      "str"
+    ],
+    "affected": [
+      "str"
+    ],
+    "state": [
+      "str"
+    ],
+    "recorded": [
+      "str"
+    ]
+  },
+  "rules": {
+    "version": [
+      "str"
+    ],
+    "effective": [
+      "str"
+    ],
+    "calendar": [
+      "str"
+    ],
+    "limit_days": [
+      "int"
+    ]
+  },
+  "legacy_cells": {
+    "period": [
+      "str"
+    ],
+    "district": [
+      "str"
+    ],
+    "service": [
+      "str"
+    ],
+    "window": [
+      "str"
+    ],
+    "total": [
+      "int"
+    ],
+    "timely": [
+      "int"
+    ]
+  },
+  "recipients": {
+    "recipient": [
+      "str"
+    ],
+    "district": [
+      "str"
+    ],
+    "parts": [
+      "list"
+    ],
+    "due": [
+      "str"
+    ]
+  },
+  "signed": {
+    "bundle": [
+      "str"
+    ],
+    "recipient": [
+      "str"
+    ],
+    "period": [
+      "str"
+    ],
+    "facts_at": [
+      "str"
+    ],
+    "ack_at": [
+      "NoneType",
+      "str"
+    ],
+    "result": [
+      "str"
+    ]
+  }
+}
