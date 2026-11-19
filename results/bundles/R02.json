@@ -1,0 +1,429 @@
+{
+  "bundle": "R02",
+  "recipient": "市主管",
+  "district": "全市",
+  "period": "2026-10",
+  "facts_at": "2026-11-04T18:00",
+  "due": "2026-11-05T09:00",
+  "parts": {
+    "旧考核": {
+      "part": "旧考核",
+      "facts_at": "2026-11-04T18:00",
+      "period": "2026-10",
+      "district": "全市",
+      "convention": "窗口旧口径",
+      "rule": {
+        "version": "窗口旧口径",
+        "effective": "2025-01-01",
+        "calendar": "旧历",
+        "limit_days": 5
+      },
+      "denominator": "窗口责任分母按组件计：一个联办件的每个责任窗口各计一件（遵从原约定）",
+      "cells": [
+        {
+          "period": "2026-10",
+          "district": "东城",
+          "service": "登记联办",
+          "window": "W1",
+          "total": 2,
+          "timely": 2,
+          "items": [
+            "old:A1",
+            "old:A2"
+          ],
+          "gaps": []
+        },
+        {
+          "period": "2026-10",
+          "district": "东城",
+          "service": "登记联办",
+          "window": "W2",
+          "total": 1,
+          "timely": 1,
+          "items": [
+            "old:B1"
+          ],
+          "gaps": []
+        }
+      ],
+      "items": [
+        {
+          "item": "old:A1",
+          "kind": "old",
+          "status": "已重算",
+          "convention": "窗口旧口径",
+          "case": "K1",
+          "component": "A1",
+          "window": "W1",
+          "calendar": "旧历",
+          "scope": "W1",
+          "limit": 5,
+          "start": "2026-10-12",
+          "end": "2026-10-20",
+          "days": 4,
+          "excluded_days": 1,
+          "timely": true,
+          "pauses": [
+            [
+              "2026-10-14",
+              "2026-10-16"
+            ]
+          ],
+          "reasons": [],
+          "missing": [],
+          "evidence": [
+            "case_links: K1/A1 关联 W1（received 2026-10-05）",
+            "events: A1 窗口受理 2026-10-12",
+            "events: A1 窗口完成 2026-10-20",
+            "events: A1 窗口暂停 2026-10-14 -> 恢复 2026-10-16",
+            "calendar_revisions: 旧历/W1 2026-10-15=休息（recorded 2026-11-04）"
+          ],
+          "notes": []
+        },
+        {
+          "item": "old:B1",
+          "kind": "old",
+          "status": "已重算",
+          "convention": "窗口旧口径",
+          "case": "K1",
+          "component": "B1",
+          "window": "W2",
+          "calendar": "旧历",
+          "scope": "W2",
+          "limit": 5,
+          "start": "2026-10-12",
+          "end": "2026-10-21",
+          "days": 4,
+          "excluded_days": 2,
+          "timely": true,
+          "pauses": [
+            [
+              "2026-10-15",
+              "2026-10-19"
+            ]
+          ],
+          "reasons": [],
+          "missing": [],
+          "evidence": [
+            "case_links: K1/B1 关联 W2（received 2026-10-05）",
+            "events: B1 窗口受理 2026-10-12",
+            "events: B1 窗口完成 2026-10-21",
+            "events: B1 窗口暂停 2026-10-15 -> 恢复 2026-10-19",
+            "calendar_revisions: 旧历/W2 2026-10-13=休息（recorded 2026-10-01）"
+          ],
+          "notes": []
+        },
+        {
+          "item": "old:A2",
+          "kind": "old",
+          "status": "已重算",
+          "convention": "窗口旧口径",
+          "case": "K2",
+          "component": "A2",
+          "window": "W1",
+          "calendar": "旧历",
+          "scope": "W1",
+          "limit": 5,
+          "start": "2026-10-12",
+          "end": "2026-10-16",
+          "days": 3,
+          "excluded_days": 0,
+          "timely": true,
+          "pauses": [],
+          "reasons": [],
+          "missing": [],
+          "evidence": [
+            "case_links: K2/A2 关联 W1（received 2026-10-05）",
+            "events: A2 窗口受理 2026-10-12",
+            "events: A2 窗口完成 2026-10-16",
+            "calendar_revisions: 旧历/W1 2026-10-15=休息（recorded 2026-11-04）"
+          ],
+          "notes": []
+        }
+      ],
+      "case_gaps": [
+        {
+          "case": "K3",
+          "reasons": [
+            "缺少有效联办关系"
+          ],
+          "missing": [
+            "K3 在口径截点没有有效的联办关系（case_links）"
+          ]
+        }
+      ]
+    },
+    "新考核": {
+      "part": "新考核",
+      "facts_at": "2026-11-04T18:00",
+      "period": "2026-10",
+      "district": "全市",
+      "convention": "居民新口径",
+      "rule": {
+        "version": "居民新口径",
+        "effective": "2026-10-01",
+        "calendar": "居民历",
+        "limit_days": 6
+      },
+      "denominator": "居民等待分母按联办件计：同一联办件只算一次",
+      "cells": [
+        {
+          "period": "2026-10",
+          "district": "东城",
+          "service": "登记联办",
+          "total": 1,
+          "timely": 1,
+          "items": [
+            "new:K1"
+          ],
+          "gaps": [
+            "new:K2"
+          ]
+        },
+        {
+          "period": "2026-10",
+          "district": "北城",
+          "service": "居住联办",
+          "total": 0,
+          "timely": 0,
+          "items": [],
+          "gaps": [
+            "new:K3"
+          ]
+        }
+      ],
+      "by_window": {
+        "slices": {
+          "W1": {
+            "window": "W1",
+            "total": 1,
+            "timely": 1,
+            "items": [
+              "new:K1"
+            ]
+          },
+          "W2": {
+            "window": "W2",
+            "total": 1,
+            "timely": 1,
+            "items": [
+              "new:K1"
+            ]
+          }
+        },
+        "combined": {
+          "total": 1,
+          "timely": 1,
+          "items": [
+            "new:K1"
+          ]
+        },
+        "note": "居民等待按涉及窗口切片，各片互相重叠，不可按行相加；合计按联办件去重"
+      },
+      "items": [
+        {
+          "item": "new:K1",
+          "kind": "new",
+          "status": "已重算",
+          "convention": "居民新口径",
+          "case": "K1",
+          "component": "",
+          "window": "W1/W2",
+          "calendar": "居民历",
+          "scope": "联办",
+          "limit": 6,
+          "start": "2026-10-13",
+          "end": "2026-10-21",
+          "days": 5,
+          "excluded_days": 0,
+          "timely": true,
+          "pauses": [],
+          "reasons": [],
+          "missing": [],
+          "evidence": [
+            "case_links: K1/A1 关联 W1（received 2026-10-05）",
+            "case_links: K1/B1 关联 W2（received 2026-10-05）",
+            "events: 首次材料齐备 2026-10-13（A1）",
+            "events: 联合结案 2026-10-21（A1）",
+            "calendar_revisions: 居民历/联办 2026-10-16=休息（recorded 2026-10-01）"
+          ],
+          "notes": [
+            "A1 的窗口暂停（2026-10-14）是窗口事件，不能充当全件暂停凭据",
+            "A1 的窗口恢复（2026-10-16）是窗口事件，不能充当全件暂停凭据",
+            "B1 的窗口暂停（2026-10-15）是窗口事件，不能充当全件暂停凭据",
+            "B1 的窗口恢复（2026-10-19）是窗口事件，不能充当全件暂停凭据"
+          ]
+        },
+        {
+          "item": "new:K2",
+          "kind": "new",
+          "status": "未能重算",
+          "convention": "居民新口径",
+          "case": "K2",
+          "component": "",
+          "window": "W1",
+          "calendar": "居民历",
+          "scope": "联办",
+          "limit": 6,
+          "start": "",
+          "end": "",
+          "days": null,
+          "excluded_days": 0,
+          "timely": null,
+          "pauses": [],
+          "reasons": [
+            "完整申请事实不能建立",
+            "完结事实不能建立"
+          ],
+          "missing": [
+            "K2 各组件均缺少材料齐备回执",
+            "K2 缺少联合结案回执"
+          ],
+          "evidence": [
+            "case_links: K2/A2 关联 W1（received 2026-10-05）"
+          ],
+          "notes": []
+        },
+        {
+          "item": "new:K3",
+          "kind": "new",
+          "status": "未能重算",
+          "convention": "居民新口径",
+          "case": "K3",
+          "component": "",
+          "window": "",
+          "calendar": "居民历",
+          "scope": "联办",
+          "limit": 6,
+          "start": "",
+          "end": "",
+          "days": null,
+          "excluded_days": 0,
+          "timely": null,
+          "pauses": [],
+          "reasons": [
+            "缺少有效联办关系"
+          ],
+          "missing": [
+            "K3 在口径截点没有有效的联办关系（case_links）"
+          ],
+          "evidence": [],
+          "notes": []
+        }
+      ]
+    },
+    "覆盖说明": {
+      "part": "覆盖说明",
+      "facts_at": "2026-11-04T18:00",
+      "period": "2026-10",
+      "district": "全市",
+      "rules": [
+        {
+          "version": "窗口旧口径",
+          "effective": "2025-01-01",
+          "calendar": "旧历",
+          "limit_days": 5
+        },
+        {
+          "version": "居民新口径",
+          "effective": "2026-10-01",
+          "calendar": "居民历",
+          "limit_days": 6
+        }
+      ],
+      "旧口径": {
+        "应到组件": 3,
+        "已重算": 3,
+        "未能重算": []
+      },
+      "新口径": {
+        "应到案件": 3,
+        "已重算": 1,
+        "未能重算": [
+          {
+            "item": "new:K2",
+            "reasons": [
+              "完整申请事实不能建立",
+              "完结事实不能建立"
+            ],
+            "missing": [
+              "K2 各组件均缺少材料齐备回执",
+              "K2 缺少联合结案回执"
+            ]
+          },
+          {
+            "item": "new:K3",
+            "reasons": [
+              "缺少有效联办关系"
+            ],
+            "missing": [
+              "K3 在口径截点没有有效的联办关系（case_links）"
+            ]
+          }
+        ],
+        "不适用": []
+      },
+      "无联办关系案件": [
+        "K3"
+      ],
+      "已撤销联办关系": [
+        {
+          "case": "K2",
+          "component": "B2",
+          "window": "W2",
+          "received": "2026-11-04",
+          "note": "该联办关系已撤销，撤销后口径截点下不计入任何窗口责任"
+        }
+      ],
+      "日历更正": [
+        {
+          "calendar": "旧历",
+          "applies_to": "W2",
+          "affected": "2026-10-13",
+          "state": "休息",
+          "recorded": "2026-10-01"
+        },
+        {
+          "calendar": "旧历",
+          "applies_to": "W1",
+          "affected": "2026-10-15",
+          "state": "工作",
+          "recorded": "2026-10-01"
+        },
+        {
+          "calendar": "旧历",
+          "applies_to": "W1",
+          "affected": "2026-10-15",
+          "state": "休息",
+          "recorded": "2026-11-04"
+        },
+        {
+          "calendar": "居民历",
+          "applies_to": "联办",
+          "affected": "2026-10-16",
+          "state": "休息",
+          "recorded": "2026-10-01"
+        }
+      ],
+      "既有汇总": [
+        {
+          "id": "legacy:2026-09/北城/居住联办/W3",
+          "period": "2026-09",
+          "district": "北城",
+          "service": "居住联办",
+          "window": "W3",
+          "total": 12,
+          "timely": 10,
+          "note": "既有旧汇总仍有效；仅月度汇总，不能推断至单个联办件，也不能当作居民新口径"
+        }
+      ],
+      "可比性注记": [
+        "旧季完成率按窗口旧口径解释保留；居民新口径自规则生效日起考核，两者起止定义与排除区间不同",
+        "只知道责任窗口超时率，不能还原居民超时率；居民等待以联办件为单位另行计算",
+        "比较差异可能来自事项组合、适用日期或口径，不得把全部变动归为办得更快了",
+        "旧汇总批次的等待与今年新口径测到的等待不是同一回事，不为让曲线连得上而并轨"
+      ]
+    }
+  },
+  "digest": "6b2bc7a936b52969"
+}

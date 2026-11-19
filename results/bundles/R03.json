@@ -1,0 +1,38 @@
+{
+  "bundle": "R03",
+  "recipient": "北城窗口",
+  "district": "北城",
+  "period": "2026-10",
+  "facts_at": "2026-11-04T18:00",
+  "due": "2026-11-05T10:00",
+  "parts": {
+    "旧考核": {
+      "part": "旧考核",
+      "facts_at": "2026-11-04T18:00",
+      "period": "2026-10",
+      "district": "北城",
+      "convention": "窗口旧口径",
+      "rule": {
+        "version": "窗口旧口径",
+        "effective": "2025-01-01",
+        "calendar": "旧历",
+        "limit_days": 5
+      },
+      "denominator": "窗口责任分母按组件计：一个联办件的每个责任窗口各计一件（遵从原约定）",
+      "cells": [],
+      "items": [],
+      "case_gaps": [
+        {
+          "case": "K3",
+          "reasons": [
+            "缺少有效联办关系"
+          ],
+          "missing": [
+            "K3 在口径截点没有有效的联办关系（case_links）"
+          ]
+        }
+      ]
+    }
+  },
+  "digest": "d90f9ecd29462f89"
+}

@@ -1,0 +1,90 @@
+{
+  "notice": "CN-R01-1",
+  "about": "R01",
+  "recipient": "东城窗口",
+  "period": "2026-10",
+  "signed_facts_at": "2026-11-02T09:00",
+  "generated_at": "2026-11-04T18:00",
+  "本期更正": [
+    {
+      "part": "旧考核",
+      "scale": "项",
+      "item": "old:B2",
+      "change": "移出",
+      "was": {
+        "status": "已重算",
+        "days": 4,
+        "timely": true,
+        "window": "W2"
+      },
+      "now": null,
+      "causes": [
+        "case_links K2/B2 撤销（received 2026-11-04）"
+      ]
+    },
+    {
+      "part": "旧考核",
+      "scale": "项",
+      "item": "old:A1",
+      "change": "excluded_days 变化",
+      "was": 2,
+      "now": 1,
+      "causes": [
+        "calendar_revisions 旧历/W1 2026-10-15=休息（recorded 2026-11-04）"
+      ]
+    },
+    {
+      "part": "旧考核",
+      "scale": "项",
+      "item": "old:A2",
+      "change": "days 变化",
+      "was": 4,
+      "now": 3,
+      "causes": [
+        "calendar_revisions 旧历/W1 2026-10-15=休息（recorded 2026-11-04）"
+      ]
+    },
+    {
+      "part": "旧考核",
+      "scale": "单元",
+      "cell": "2026-10/东城/登记联办/W2",
+      "change": "数值变化",
+      "was": {
+        "total": 2,
+        "timely": 2
+      },
+      "now": {
+        "total": 1,
+        "timely": 1
+      },
+      "causes": [
+        "case_links K2/B2 撤销（received 2026-11-04）"
+      ]
+    }
+  ],
+  "不再成立的对比区间": [
+    "旧考核 2026-10/东城/登记联办/W2：以签收版（2026-11-02T09:00）为基准的对比不再成立",
+    "旧考核 逐件明细在签收版与现行事实之间发生变化，跨两版的趋势对比不再成立",
+    "凡引用签收版（2026-11-02T09:00）数值、且落在上述单元/明细的对比区间均不再成立"
+  ],
+  "新事实依据": [
+    {
+      "table": "calendar_revisions",
+      "recorded": "2026-11-04",
+      "calendar": "旧历",
+      "applies_to": "W1",
+      "affected": "2026-10-15",
+      "state": "休息"
+    },
+    {
+      "table": "case_links",
+      "received": "2026-11-04",
+      "case": "K2",
+      "component": "B2",
+      "window": "W2",
+      "operation": "撤销"
+    }
+  ],
+  "签收版快照": "results/bundles/R01.signed.json",
+  "note": "已签收包不能追改；本说明供签收方区分本期更正与不再成立的对比区间"
+}
